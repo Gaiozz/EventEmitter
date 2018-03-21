@@ -1,4 +1,4 @@
-export default class EventEmitter {
+class EventEmitter {
     constructor () {
         this.listeners = []
         this._retainedEvents = {}
@@ -77,5 +77,6 @@ export default class EventEmitter {
     }
 }
 
-window.EventEmitter = EventEmitter
-const GlobalEmitter = new EventEmitter()
+void function Init () {
+    const GlobalEmitter = new EventEmitter()
+}()
